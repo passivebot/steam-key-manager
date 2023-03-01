@@ -1,4 +1,4 @@
-# Steam Key Manager 
+# steam-key-manager 
 
 <img src="https://i.imgur.com/TWa2onv.png">
 
