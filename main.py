@@ -25,7 +25,7 @@ class SteamKeyManager(tk.Tk):
 
         # Setting window properties
         self.title('Steam Key Manager')
-        self.geometry('800x800')
+        self.geometry('500x800')
         self.resizable(True, True)
 
         # Adding widgets to the window
@@ -74,6 +74,16 @@ class SteamKeyManager(tk.Tk):
 
         # Binding the listbox to handle double-click events
         self.results_listbox.bind('<Double-Button-1>', self.select_key)
+
+        # Add Logo to the window.
+        self.logo = tk.PhotoImage(file="logo.png")
+        self.logo_label = tk.Label(self, image=self.logo)
+        self.logo_label.grid(row=9, column=1, padx=10, pady=10, sticky='w')
+        self.logo_label.place(relx=0.5, rely=0.9, anchor=CENTER)
+        self.logo_label.image = self.logo
+
+
+
 
     # Function to add a key to the database
     def add_key(self):
